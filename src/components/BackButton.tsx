@@ -5,7 +5,7 @@ export default function BackButton() {
   const history = useHistory();
   return (
     <button
-      className='text-black flex items-center font-semibold mb-2 bg-gray-50 border hover:bg-gray-200 shadow-md py-1 px-2 rounded-md'
+      className='flex uppercase items-center font-semibold mb-2 border py-2 shadow-lg px-4'
       onClick={() => history.goBack()}
     >
       <svg

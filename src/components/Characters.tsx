@@ -34,14 +34,14 @@ const Characters: React.FC<Props> = ({ limit = null }) => {
                 src={character.img}
                 alt=''
               />
-              <div className='flex flex-grow flex-col'>
+              <div className='flex items-start flex-col'>
                 <span className='font-bold uppercase'>{character.name}</span>
                 <span className='text-gray-300 text-sm italic'>
                   Born in <span className='italic'>{character.birthday}</span>
                 </span>
                 <span>Potrayed by {character.portrayed}</span>
                 <Link
-                  className='mt-2 underline'
+                  className='mt-4 px-4 py-2 border uppercase shadow-lg font-semibold text-sm'
                   key={character.char_id}
                   to={`characters/${character.char_id}`}
                 >

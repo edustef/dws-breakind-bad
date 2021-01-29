@@ -14,7 +14,7 @@ const Feature: React.FC<Props> = ({ title, children, link }) => {
       {children}
       <Link
         to={link}
-        className='inline-block mt-2 px-4 py-2 border uppercase font-semibold text-sm'
+        className='inline-block mt-4 px-4 py-2 border uppercase shadow-lg font-semibold text-sm'
       >
         See all {title}
       </Link>
