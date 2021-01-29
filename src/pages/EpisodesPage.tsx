@@ -6,7 +6,7 @@ export default function EpisodesPage() {
   return (
     <div>
       <BackButton />
-      <h1>All episodes</h1>
+      <h1 className='text-2xl'>All episodes</h1>
       <Episodes />
     </div>
   );

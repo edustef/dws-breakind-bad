@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { capitalize } from 'lodash';
 
 interface Props {
   title: string;
@@ -10,7 +9,7 @@ interface Props {
 const Feature: React.FC<Props> = ({ title, children, link }) => {
   return (
     <div>
-      <h2 className='mb-2 text-2xl'>Featured {capitalize(title)}</h2>
+      <h2 className='mb-2 text-2xl'>Featured {title.toLowerCase()}</h2>
       {children}
       <Link
         to={link}

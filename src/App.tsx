@@ -9,7 +9,7 @@ import EpisodesPage from './pages/EpisodesPage';
 
 function App() {
   return (
-    <div className='p-4 text-white bg-gradient-to-br from-green-900 to-green-700 h-full w-full min-h-screen'>
+    <div className='p-4 text-green-100 bg-gradient-to-br from-green-900 to-green-700 h-full w-full min-h-screen'>
       <Switch>
         <Route exact path='/'>
           <div className='space-y-4'>
@@ -17,10 +17,10 @@ function App() {
               <h1 className='text-center'>Breaking Bad DB</h1>
             </a>
             <Feature title='Characters' link='/characters'>
-              <Characters limit={3} />
+              <Characters limit={4} />
             </Feature>
             <Feature title='Episodes' link='/episodes'>
-              <Episodes limit={6} />
+              <Episodes detailsOpen limit={6} />
             </Feature>
           </div>
         </Route>
